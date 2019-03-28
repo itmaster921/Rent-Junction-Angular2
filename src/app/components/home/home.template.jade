@@ -1,0 +1,38 @@
+.row
+
+  br
+  h5
+    .medium-10.columns
+      | To Buy or Find anything select an option below:
+    .medium-2.columns.text-right
+      a.button.hollow.drop-shadow.move-right(
+        *ngIf="isAuthenticated()",
+        [routerLink]= '["/product_new"]'
+      ) New Product
+  hr
+
+  .small-up-3.medium-up-4.large-up-5(*ngIf= '!selectedCategory')
+    .column.text-center.fx-fade-down.fx-easing-sine.fx-speed-500(*ngFor= '#category of categories')
+      a((click)="showSubCategories(category)")
+        show-category([category]= 'category')
+
+  .row
+    .large-2.small-3.columns.fx-fade-right.fx-speed-500(*ngIf='selectedCategory')
+      ul.menu.vertical(data-magellan)
+        li
+          a.item.button(
+            (click)="showSubCategories(category)",
+            *ngFor= '#category of categories',
+            [class.active]= 'category === selectedCategory'
+            )
+            show-category([category]= 'category', [selectedCategory]= 'selectedCategory')
+
+    .large-10.small-9.columns.fx-fade-left.fx-easing-sine.fx-speed-500(
+      *ngIf='selectedCategory'
+      )
+      .small-up-3.medium-up-4.large-up-5
+        .column.text-center.fx-fade-left.fx-easing-sine.fx-speed-500(
+          *ngFor= '#sub_category of selectedCategory.sub_categories'
+          )
+          a([routerLink]= "['/products', sub_category._id]")
+            show-sub-category([sub_category]= 'sub_category')
