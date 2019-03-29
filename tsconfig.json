@@ -13,5 +13,5 @@
     "node_modules",
     "src/bower_components"
   ],
-  "compileOnSave": false
+  
 }
