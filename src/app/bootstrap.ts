@@ -1,9 +1,9 @@
-import { bootstrap } from "@angular/platform-browser-dynamic";
-import { bind, provide, PLATFORM_DIRECTIVES } from "@angular/core";
-import { ROUTER_DIRECTIVES } from "@angular/router"
-import { FORM_PROVIDERS, LocationStrategy, HashLocationStrategy } from "@angular/common";
-import { ROUTER_PROVIDERS } from "@angular/router";
-import { HTTP_PROVIDERS, Http } from "@angular/http";
+import { bootstrap } from "angular2/platform/browser";
+import { bind, provide } from "angular2/core";
+import { FORM_PROVIDERS } from "angular2/common";
+import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from "angular2/router";
+import { HTTP_PROVIDERS, Http } from "angular2/http";
+import { AuthConfig, AuthHttp } from "angular2-jwt";
 
 // import {AuthHttp} from "angular2-jwt";
 // import {Config, SATELLIZER_PROVIDERS, Auth} from "ng2-ui-auth";

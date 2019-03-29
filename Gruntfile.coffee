@@ -19,13 +19,6 @@ module.exports = (grunt) ->
 
     scripts:
       libs: [
-          "node_modules/@angular/common/**/*",
-          "node_modules/@angular/compiler/**/*",
-          "node_modules/@angular/core/**/*",
-          "node_modules/@angular/http/**/*",
-          "node_modules/@angular/platform-browser/**/*",
-          "node_modules/@angular/platform-browser-dynamic/**/*",
-          "node_modules/@angular/router/**/*",
           "node_modules/@angular/router-deprecated/**/*",
           "node_modules/@angular/upgrade/**/*",
           "node_modules/systemjs/dist/system.src.js",
