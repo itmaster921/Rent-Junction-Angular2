@@ -50,17 +50,7 @@ module.exports = (grunt) ->
 
   grunt.initConfig configs
 
-  grunt.loadNpmTasks("grunt-ts")
-  grunt.loadNpmTasks 'grunt-contrib-copy'
-  grunt.loadNpmTasks('grunt-contrib-jade')
-  grunt.loadNpmTasks('grunt-contrib-connect')
-  grunt.loadNpmTasks('grunt-contrib-watch')
-  grunt.loadNpmTasks('grunt-contrib-clean')
-  grunt.loadNpmTasks('grunt-contrib-concat')
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-hashres');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+ 
 
   #Scripts
   grunt.registerTask 'scripts', [
