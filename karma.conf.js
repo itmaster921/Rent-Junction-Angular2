@@ -2,7 +2,7 @@ module.exports = function(config){
   config.set({
 
     preprocessors: {
-      '**/*.js.coffee': ['coffee']
+      '**/*.coffee': ['coffee']
     },
 
     coffeePreprocessor: {
