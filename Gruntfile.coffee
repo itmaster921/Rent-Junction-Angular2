@@ -28,12 +28,7 @@ module.exports = (grunt) ->
           "node_modules/zone.js/dist/zone.js",
           "node_modules/reflect-metadata/Reflect.*",
           #'node_modules/ng2-ui-auth/export.js'
-          'bower_components/jquery/dist/jquery.js',
-          'bower_components/toastr/toastr.js',
-          'bower_components/what-input/what-input.js',
-          'bower_components/foundation-sites/dist/foundation.js',
-          'bower_components/nprogress/nprogress.js',
-          'systemjs.config.js'
+
         ]
       app: [
         'build/app/components/{,*/}{,*/}*.js'
