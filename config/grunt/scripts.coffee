@@ -11,7 +11,6 @@ module.exports = (grunt, appConfig) -> tasks:
         experimentalDecorators: true
         emitDecoratorMetadata: true
         removeComments: true
-        noImplicitAny: false
 
   concat:
     options:
